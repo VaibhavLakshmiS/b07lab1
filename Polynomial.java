@@ -355,12 +355,12 @@ public class Polynomial {
 			{
 				if ( this.exponents[i]==0)
 				{
-					the_file.println(String.valueOf(coefficients[i]));
+					the_file.print(String.valueOf(coefficients[i]));
 				}
 				if ( this.exponents[i]==1) {
 					the_file.print(String.valueOf(coefficients[i])+'x');
 				 }
-				else 
+				if ( this.exponents[i]!=0)
 				{
 					the_file.print(String.valueOf(coefficients[i])+'x'+String.valueOf(exponents[i]));
 				}
