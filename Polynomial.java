@@ -357,25 +357,25 @@ public class Polynomial {
 				{
 					the_file.print(String.valueOf(coefficients[i]));
 				}
-				if ( this.exponents[i]==1) {
+				else if ( this.exponents[i]==1) {
 					the_file.print(String.valueOf(coefficients[i])+'x');
 				 }
-				if ( this.exponents[i]!=0)
+				else if ( this.exponents[i]!=0)
 				{
 					the_file.print(String.valueOf(coefficients[i])+'x'+String.valueOf(exponents[i]));
 				}
 			}
 			if ( i!=0 && coefficients[i]>0)
 			{
-				if ( this.exponents[i]==0)
+				if (this.exponents[i]==0)
 				{
 						the_file.print('+'+String.valueOf(coefficients[i]));
 				}
-				if ( this.exponents[i]==1) 
+				else if ( this.exponents[i]==1) 
 				{
 					the_file.print('+'+String.valueOf(coefficients[i])+'x'+'1');
 				}
-				else
+				else if (this.exponents[i]!=0)
 				{
 					the_file.print('+'+String.valueOf(coefficients[i])+'x'+String.valueOf(exponents[i]));
 				}
@@ -384,13 +384,13 @@ public class Polynomial {
 			{
 				if ( this.exponents[i]==0)
 				{
-						the_file.print(String.valueOf(coefficients[i]));
+					the_file.print(String.valueOf(coefficients[i]));
 				}
-				if ( this.exponents[i]==1) 
+				else if ( this.exponents[i]==1) 
 				{
 					the_file.print(String.valueOf(coefficients[i])+'x'+'1');
 				}
-				else
+				else if ( this.exponents[i]!=0)
 				{
 					the_file.print(String.valueOf(coefficients[i])+'x'+String.valueOf(exponents[i]));
 				}
